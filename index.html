@@ -221,7 +221,7 @@ const DATA = {
         { name:{en:"Chilled Young Coconut", ru:"Охлаждённый кокос", th:"มะพร้าวน้ำหอมสด"},
           desc:{en:"Served whole, spooned fresh at the table", ru:"Подаётся целиком, вскрывается за столом",
                 th:"เสิร์ฟทั้งลูก ผ่าสดที่โต๊ะ"},
-          price:150, spice:0, veg:true, photo:"Chilled Young Coconut.png" }
+          price:150, spice:0, veg:true, photo:"Chilled Young Coconut.jpg" }
       ]
     }
   ]
@@ -246,7 +246,7 @@ function render(){
       <p class="category-note">${c.note[lang]}</p>
       ${c.dishes.map(d=>`
         <div class="dish">
-          <div class="frame"><img src="photos/${d.photo}" alt="${d.name.en}" loading="lazy"></div>
+          <div class="frame"><img src="${d.photo}" alt="${d.name.en}" loading="lazy"></div>
           <div>
             <div class="name-row">
               <span class="name">${d.name[lang]}</span>
